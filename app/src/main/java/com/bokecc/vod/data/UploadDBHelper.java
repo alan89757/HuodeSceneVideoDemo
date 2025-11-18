@@ -49,7 +49,9 @@ public class UploadDBHelper {
     }
 
     private UploadInfo findUploadInfo(String uploadId) {
-        Query<UploadInfo> query = box.query().equal(UploadInfo_.uploadId, uploadId).build();
+        Query<UploadInfo> query = box.query()
+                .equal(UploadInfo_.uploadId, uploadId, io.objectbox.query.QueryBuilder.StringOrder.CASE_SENSITIVE)
+                .build();
         return query.findFirst();
     }
 

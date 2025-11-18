@@ -18,7 +18,9 @@ public class VideoPositionDBHelper {
         if (TextUtils.isEmpty(videoId)){
             return null;
         }
-        Query<VideoPosition> query = box.query().equal(VideoPosition_.videoId, videoId).build();
+        Query<VideoPosition> query = box.query()
+                .equal(VideoPosition_.videoId, videoId, io.objectbox.query.QueryBuilder.StringOrder.CASE_SENSITIVE)
+                .build();
         VideoPosition videoPosition = query.findFirst();
         return videoPosition;
     }

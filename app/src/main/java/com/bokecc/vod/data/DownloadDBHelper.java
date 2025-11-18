@@ -29,7 +29,9 @@ public class DownloadDBHelper {
     }
 
     private DownloadInfo findDownloadInfo(String title) {
-        Query<DownloadInfo> query = box.query().equal(DownloadInfo_.title, title).build();
+        Query<DownloadInfo> query = box.query()
+                .equal(DownloadInfo_.title, title, io.objectbox.query.QueryBuilder.StringOrder.CASE_SENSITIVE)
+                .build();
         return query.findFirst();
     }
 
