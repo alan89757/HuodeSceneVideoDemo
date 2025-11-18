@@ -46,7 +46,6 @@ android {
             buildConfigField("boolean","isDefault","${PROP_IS_DEFAULT}")
             buildConfigField("boolean","isShowSignin","${PROP_SHOW_SIGNIN}")
             buildConfigField("int","VerificationVersion","${PROP_VERIFICATION_VERSION}")
-            signingConfig signingConfigs.release
         }
         release {
             minifyEnabled false
@@ -58,7 +57,9 @@ android {
             buildConfigField("boolean","isDefault","${PROP_IS_DEFAULT}")
             buildConfigField("boolean","isShowSignin","${PROP_SHOW_SIGNIN}")
             buildConfigField("int","VerificationVersion","${PROP_VERIFICATION_VERSION}")
-            signingConfig signingConfigs.release
+            if (file('bokecc.jks').exists()) {
+                signingConfig signingConfigs.release
+            }
         }
     }
 
