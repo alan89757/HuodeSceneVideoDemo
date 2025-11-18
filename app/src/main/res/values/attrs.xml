@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TriangleView">
+        <attr name="tr_color" format="color"/>
+        <attr name="tr_corners" format="dimension"/>
+    </declare-styleable>
+
+</resources>

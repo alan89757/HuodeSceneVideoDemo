@@ -1,0 +1,44 @@
+{
+  "loop": -1,
+  "type": "image",
+  "text": {
+    "content": "跑马灯",
+    "font_size": 50,
+    "color": "#e8cea0"
+  },
+  "image": {
+    "image_url": "https://console.bokecc.com/img/logo.9ba43539.png",
+    "width": 228,
+    "height": 60
+  },
+  "action": [
+    {
+      "index": 0,
+      "duration": 3000,
+      "start": {
+        "xpos": 0.012,
+        "ypos": 0,
+        "alpha": 0.8
+      },
+      "end": {
+        "xpos": 0.912,
+        "ypos": 0.823,
+        "alpha": 0.8
+      }
+    },
+    {
+      "index": 1,
+      "duration": 5000,
+      "start": {
+        "xpos": 0.312,
+        "ypos": 0.823,
+        "alpha": 0.8
+      },
+      "end": {
+        "xpos": 0.912,
+        "ypos": 0.123,
+        "alpha": 0.2
+      }
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@id/id_popup_window_outside_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <RelativeLayout
+        android:id="@id/id_popup_window_anim_view"
+        android:layout_marginTop="11dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="335dp"
+        android:layout_height="185dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/white_corner_bac"
+            android:orientation="vertical">
+            <com.bokecc.vod.view.TriangleView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:tr_corners="4dp"
+                app:tr_color="@color/text_1a000000"/>
+
+            <TextView
+                android:id="@+id/tv_signin_num"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="12sp"
+                android:textColor="#666666"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_signin_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="43dp"
+                    android:maxEms="16"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_signin_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:lineSpacingExtra="8px"
+                    android:maxLines="2"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/bt_signin"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:singleLine="true"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="6.5dp"
+                    android:background="@drawable/shape_orange_corner_bac"
+                    android:textColor="#ffffff"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_signin"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/sign_in"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

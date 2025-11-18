@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">获得场景视频</string>
+    <string name="umeng_app_key">60cafa7e26a57f10182961d0</string>
+    <string name="submitAnswer">提交答案</string>
+    <string name="commitFailedTip">提交失败！</string>
+    <string name="resubmit">重新提交</string>
+    <string name="resumePlay">继续播放</string>
+    <string name="statistics_title">答题统计</string>
+    <string name="backView">回放</string>
+    <string name="KnowledgePoints">知识点</string>
+    <string name="skip">跳过</string>
+</resources>

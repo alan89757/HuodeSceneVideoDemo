@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:background="@drawable/shape_statistics_total_bg">
+
+        <View
+            android:id="@+id/selectScaleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <TextView
+            android:id="@+id/selectScale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/selectNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectScale"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:id="@+id/selectCurrentResult"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="18dp"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/choose_right" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/answerContent"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_height="wrap_content"
+        android:minWidth="30dp"
+        android:gravity="center"
+        android:maxLines="1"
+        android:textSize="14sp" />
+</LinearLayout>

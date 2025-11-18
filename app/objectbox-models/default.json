@@ -1,0 +1,258 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:7713861698248174882",
+      "lastPropertyId": "18:1722480385428677194",
+      "name": "DownloadInfo",
+      "properties": [
+        {
+          "id": "1:4898927549635242615",
+          "name": "id"
+        },
+        {
+          "id": "2:5811192736365289817",
+          "name": "videoId"
+        },
+        {
+          "id": "3:723155783586588985",
+          "name": "title"
+        },
+        {
+          "id": "4:5696526677169530441",
+          "name": "format"
+        },
+        {
+          "id": "5:1625828908470892474",
+          "name": "downloadMode"
+        },
+        {
+          "id": "6:508628179352413554",
+          "name": "videoCover"
+        },
+        {
+          "id": "7:665318881545537219",
+          "name": "start"
+        },
+        {
+          "id": "8:5564352524776428910",
+          "name": "end"
+        },
+        {
+          "id": "9:7423374331323777409",
+          "name": "status"
+        },
+        {
+          "id": "10:5963364576596788705",
+          "name": "createTime"
+        },
+        {
+          "id": "11:3097552242270956447",
+          "name": "definition"
+        },
+        {
+          "id": "12:7598203525833867398",
+          "name": "firstSubtitleStatus"
+        },
+        {
+          "id": "13:7998618461232572252",
+          "name": "secondSubtitleStatus"
+        },
+        {
+          "id": "14:2076620197722244310",
+          "name": "subtitleNum"
+        },
+        {
+          "id": "15:977174811320442537",
+          "name": "logoPath"
+        },
+        {
+          "id": "16:179163016572641955",
+          "name": "subtitleModel"
+        },
+        {
+          "id": "17:4961546050607934808",
+          "name": "marqueeData"
+        },
+        {
+          "id": "18:1722480385428677194",
+          "name": "invisibleMarquee"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:1063600155544588487",
+      "lastPropertyId": "32:113825302774599854",
+      "name": "UploadInfo",
+      "properties": [
+        {
+          "id": "1:4871542451691327236",
+          "name": "id"
+        },
+        {
+          "id": "2:2718126889021300559",
+          "name": "uploadId"
+        },
+        {
+          "id": "3:5310824247432587863",
+          "name": "start"
+        },
+        {
+          "id": "4:353368435905829026",
+          "name": "end"
+        },
+        {
+          "id": "5:8131403120633345266",
+          "name": "status"
+        },
+        {
+          "id": "6:1630287110819578228",
+          "name": "progress"
+        },
+        {
+          "id": "7:2123780257924971245",
+          "name": "title"
+        },
+        {
+          "id": "8:7446035994473110916",
+          "name": "tag"
+        },
+        {
+          "id": "9:5146248989477326592",
+          "name": "desc"
+        },
+        {
+          "id": "10:6406859252879886443",
+          "name": "filePath"
+        },
+        {
+          "id": "11:7807098559408926340",
+          "name": "videoCoverPath"
+        },
+        {
+          "id": "12:2711882577915286856",
+          "name": "categoryId"
+        },
+        {
+          "id": "13:7130415440088772905",
+          "name": "uploadOrResume"
+        },
+        {
+          "id": "14:368385966555398284",
+          "name": "videoId"
+        },
+        {
+          "id": "15:1286460720193419375",
+          "name": "server"
+        },
+        {
+          "id": "16:1605763317307911344",
+          "name": "servicetype"
+        },
+        {
+          "id": "17:8228109721350972522",
+          "name": "creationTime"
+        },
+        {
+          "id": "18:4399480738101138459",
+          "name": "priority"
+        },
+        {
+          "id": "19:3003127015005313801",
+          "name": "fileName"
+        },
+        {
+          "id": "20:5314466407225304126",
+          "name": "encodetype"
+        },
+        {
+          "id": "21:7286628203447549510",
+          "name": "md5"
+        },
+        {
+          "id": "22:3194471584493743148",
+          "name": "fileByteSize"
+        },
+        {
+          "id": "23:4308042165591208945",
+          "name": "isCrop"
+        },
+        {
+          "id": "24:4380508990903692069",
+          "name": "expectWidth"
+        },
+        {
+          "id": "25:4537120081570025085",
+          "name": "corner"
+        },
+        {
+          "id": "26:326220084327087331",
+          "name": "offsetx"
+        },
+        {
+          "id": "27:6134423459819829183",
+          "name": "offsety"
+        },
+        {
+          "id": "28:5719093974187563900",
+          "name": "fontfamily"
+        },
+        {
+          "id": "29:5330107230871992361",
+          "name": "fontsize"
+        },
+        {
+          "id": "30:2905181786177601295",
+          "name": "fontcolor"
+        },
+        {
+          "id": "31:8255194474843468681",
+          "name": "fontalpha"
+        },
+        {
+          "id": "32:113825302774599854",
+          "name": "text"
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "3:6028794375502088241",
+      "lastPropertyId": "4:7482432847214878777",
+      "name": "VideoPosition",
+      "properties": [
+        {
+          "id": "1:7054976699239933436",
+          "name": "id"
+        },
+        {
+          "id": "2:5386764160420451830",
+          "name": "videoId"
+        },
+        {
+          "id": "3:410744985293399199",
+          "name": "position"
+        },
+        {
+          "id": "4:7482432847214878777",
+          "name": "isPlayCompleted"
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "3:6028794375502088241",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 4,
+  "modelVersionParserMinimum": 4,
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}

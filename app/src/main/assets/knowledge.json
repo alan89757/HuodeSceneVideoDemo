@@ -1,0 +1,127 @@
+{
+  "title": "知识点",
+  "timeAxisStatus": true,
+  "pauseStatus": true,
+  "category": [
+    {
+      "cateId": 1,
+      "name": "获得发展史",
+      "info": [
+        {
+          "id": 1,
+          "startTime": 17,
+          "endTime": 35,
+          "desc": "发展史"
+        }
+      ]
+    },
+    {
+      "cateId": 2,
+      "name": "品牌升级",
+      "info": [
+        {
+          "id": 1,
+          "startTime": 35,
+          "endTime": 50,
+          "desc": "品牌升级"
+        }
+      ]
+    },
+    {
+      "cateId": 3,
+      "name": "产品介绍",
+      "info": [
+        {
+          "id": 1,
+          "startTime": 50,
+          "endTime": 63,
+          "desc": "产品简介"
+        },
+        {
+          "id": 2,
+          "startTime": 64,
+          "endTime": 68,
+          "desc": "数说获得"
+        },
+        {
+          "id": 3,
+          "startTime": 68,
+          "endTime": 83,
+          "desc": "应用场景"
+        }
+      ]
+    },
+    {
+      "cateId": 4,
+      "name": "领导风采",
+      "info": [
+        {
+          "id": 1,
+          "startTime": 84,
+          "endTime": 96,
+          "desc": "CEO"
+        },
+        {
+          "id": 2,
+          "startTime": 223,
+          "endTime": 265,
+          "desc": "CEO"
+        }
+      ]
+    },
+    {
+      "cateId": 5,
+      "name": "客户案例",
+      "info": [
+        {
+          "id": 1,
+          "startTime": 100,
+          "endTime": 108,
+          "desc": "北京四中网校"
+        },
+        {
+          "id": 2,
+          "startTime": 108,
+          "endTime": 112,
+          "desc": "环球优学"
+        },
+        {
+          "id": 3,
+          "startTime": 112,
+          "endTime": 120,
+          "desc": "结构思考力学院"
+        },
+        {
+          "id": 4,
+          "startTime": 121,
+          "endTime": 130,
+          "desc": "馒头商学院"
+        },
+        {
+          "id": 4,
+          "startTime": 130,
+          "endTime": 138,
+          "desc": "点掌财经"
+        },
+        {
+          "id": 5,
+          "startTime": 139,
+          "endTime": 146,
+          "desc": "云朵课堂"
+        }
+      ]
+    },
+    {
+      "cateId": 6,
+      "name": "员工风采",
+      "info": [
+        {
+          "id": 1,
+          "startTime": 148,
+          "endTime": 208,
+          "desc": "员工风采集锦"
+        }
+      ]
+    }
+  ]
+}

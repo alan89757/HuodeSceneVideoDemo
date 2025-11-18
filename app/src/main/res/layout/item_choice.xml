@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="62dp"
+    android:layout_height="46dp"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:background="@drawable/shape_answer_normal"
+    android:gravity="center" >
+
+    <Button
+        android:id="@+id/choiceItem"
+        android:layout_width="62dp"
+        android:layout_height="46dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_answer_normal"
+        android:gravity="center" />
+</FrameLayout>

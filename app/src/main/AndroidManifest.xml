@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bokecc.vod">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--    下载以及日志-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!--    投屏使用 以及移动网络提示是否继续播放-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <!--    获取设备id-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--    保持屏幕常亮-->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!--    手机震动 重点预警-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".HuoDeApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".play.SpeedPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:supportsPictureInPicture="true"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <activity
+            android:name=".play.MediaPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+            android:screenOrientation="portrait"
+            android:supportsPictureInPicture="true"
+            android:windowSoftInputMode="adjustPan|stateHidden|adjustResize" />
+        <activity
+            android:name=".AccountInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".download.DownloadService" />
+
+        <activity
+            android:name=".download.DownloadListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".upload.UploadManageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".upload.EditVideoInfoActivity"
+            android:screenOrientation="portrait" />
+
+        <service android:name=".upload.UploadService" /> <!-- 使用投屏功能时需要配置ProjectionUpnpService -->
+    </application>
+
+</manifest>
