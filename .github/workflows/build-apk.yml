@@ -29,11 +29,15 @@ jobs:
         run: chmod +x gradlew
 
       - name: Prepare signing keystore
-        if: ${{ secrets.ANDROID_KEYSTORE_BASE64 != '' }}
         env:
           ANDROID_KEYSTORE_BASE64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
         run: |
-          echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > app/bokecc.jks
+          if [ -n "$ANDROID_KEYSTORE_BASE64" ]; then
+            echo "$ANDROID_KEYSTORE_BASE64" | base64 -d > app/bokecc.jks
+            echo "Keystore prepared"
+          else
+            echo "No keystore secret, building unsigned release"
+          fi
 
       - name: Build release APK
         run: ./gradlew clean :app:assembleRelease --stacktrace
