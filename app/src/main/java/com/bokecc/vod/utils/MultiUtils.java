@@ -277,6 +277,8 @@ public class MultiUtils {
         } finally {
             try {
                 retriever.release();
+            } catch (IOException ex) {
+                ex.printStackTrace();
             } catch (RuntimeException ex) {
                 // Ignore failures while cleaning up.
             }
