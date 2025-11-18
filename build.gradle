@@ -17,6 +17,7 @@ allprojects {
         google()
         mavenCentral()
         jcenter()
+        maven { url 'https://jitpack.io' }
         maven { url 'http://nexus-app.bokecc.com/repository/sdk-group/'; allowInsecureProtocol = true }
         maven { url 'http://4thline.org/m2'; allowInsecureProtocol = true }
     }
