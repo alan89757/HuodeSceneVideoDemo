@@ -1,5 +1,13 @@
 apply plugin: 'com.android.application'
 
+def PROP_VIDEO_ID = (project.findProperty('videoId') ?: '').toString()
+def PROP_USER_ID = (project.findProperty('USER_ID') ?: '').toString()
+def PROP_API_KEY = (project.findProperty('API_KEY') ?: '').toString()
+def PROP_SHOW_CUSTOM_MARQUEE = (project.findProperty('isShowCustomMarquee') ?: 'false').toString()
+def PROP_IS_DEFAULT = (project.findProperty('isDefault') ?: 'false').toString()
+def PROP_SHOW_SIGNIN = (project.findProperty('isShowSignin') ?: 'false').toString()
+def PROP_VERIFICATION_VERSION = (project.findProperty('VerificationVersion') ?: '1').toString()
+
 android {
     compileSdkVersion 34
     namespace 'com.bokecc.vod'
@@ -27,25 +35,25 @@ android {
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField("String","videoId","\"${videoId}\"")
-            buildConfigField("String","userId","\"${USER_ID}\"")
-            buildConfigField("String","key","\"${API_KEY}\"")
-            buildConfigField("Boolean","isShowCustomMarquee","${isShowCustomMarquee}")
-            buildConfigField("Boolean","isDefault","${isDefault}")
-            buildConfigField("Boolean","isShowSignin","${isShowSignin}")
-            buildConfigField("Integer","VerificationVersion","${VerificationVersion}")
+            buildConfigField("String","videoId","\"${PROP_VIDEO_ID}\"")
+            buildConfigField("String","userId","\"${PROP_USER_ID}\"")
+            buildConfigField("String","key","\"${PROP_API_KEY}\"")
+            buildConfigField("boolean","isShowCustomMarquee","${PROP_SHOW_CUSTOM_MARQUEE}")
+            buildConfigField("boolean","isDefault","${PROP_IS_DEFAULT}")
+            buildConfigField("boolean","isShowSignin","${PROP_SHOW_SIGNIN}")
+            buildConfigField("int","VerificationVersion","${PROP_VERIFICATION_VERSION}")
             signingConfig signingConfigs.release
         }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            buildConfigField("String","videoId","\"${videoId}\"")
-            buildConfigField("String","userId","\"${USER_ID}\"")
-            buildConfigField("String","key","\"${API_KEY}\"")
-            buildConfigField("Boolean","isShowCustomMarquee","${isShowCustomMarquee}")
-            buildConfigField("Boolean","isDefault","${isDefault}")
-            buildConfigField("Boolean","isShowSignin","${isShowSignin}")
-            buildConfigField("Integer","VerificationVersion","${VerificationVersion}")
+            buildConfigField("String","videoId","\"${PROP_VIDEO_ID}\"")
+            buildConfigField("String","userId","\"${PROP_USER_ID}\"")
+            buildConfigField("String","key","\"${PROP_API_KEY}\"")
+            buildConfigField("boolean","isShowCustomMarquee","${PROP_SHOW_CUSTOM_MARQUEE}")
+            buildConfigField("boolean","isDefault","${PROP_IS_DEFAULT}")
+            buildConfigField("boolean","isShowSignin","${PROP_SHOW_SIGNIN}")
+            buildConfigField("int","VerificationVersion","${PROP_VERIFICATION_VERSION}")
             signingConfig signingConfigs.release
         }
     }
