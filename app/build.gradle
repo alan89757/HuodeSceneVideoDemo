@@ -81,11 +81,6 @@ androidComponents {
     }
 }
 
-configurations.all {
-    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk7'
-    exclude group: 'org.jetbrains.kotlin', module: 'kotlin-stdlib-jdk8'
-}
-
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'androidx.appcompat:appcompat:1.7.0'
@@ -97,7 +92,7 @@ dependencies {
     implementation 'com.github.bumptech.glide:glide:4.9.0'
     implementation 'com.squareup.picasso:picasso:2.5.2'
     implementation 'androidx.recyclerview:recyclerview:1.2.1'
-    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.9.24'
+    // Kotlin stdlib由依赖库自身决定，不强制指定，避免版本不匹配
     implementation "io.objectbox:objectbox-android:${objectboxVersion}"
 
     implementation 'com.google.code.gson:gson:2.8.5'
