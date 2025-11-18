@@ -50,18 +50,20 @@ android {
         }
     }
 
-    // 打包改名
-    applicationVariants.all { variant ->
-        variant.outputs.all { output ->
-            if (outputFileName.endsWith('.apk')) {
-                def fileName = "Vod_"+AppVersion+"_release.apk"
-                outputFileName = fileName
-            }
-        }
-    }
     packagingOptions {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/beans.xml'
+    }
+}
+
+androidComponents {
+    onVariants(selector().all()) { variant ->
+        variant.outputs.forEach { output ->
+            def name = output.outputFileName.get()
+            if (name.endsWith('.apk')) {
+                output.outputFileName.set("Vod_" + AppVersion + "_release.apk")
+            }
+        }
     }
 }
 
