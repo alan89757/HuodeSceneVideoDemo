@@ -84,7 +84,7 @@ dependencies {
     //上传视频时使用压缩功能时需要引用
     implementation 'com.bokecc:CompressVideoLib:1.0.0'
     //弹幕
-    implementation 'com.github.ctiao:DanmakuFlameMaster:v0.9.25'
+    implementation 'com.github.Bilibili:DanmakuFlameMaster:v0.4.5'
     //隐身跑马灯
     implementation 'com.bokecc.module:marquee:1.0.0'
     //点播sdk
