@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'io.objectbox'
 
 def PROP_VIDEO_ID = (project.findProperty('videoId') ?: '').toString()
 def PROP_USER_ID = (project.findProperty('USER_ID') ?: '').toString()
