@@ -17,8 +17,8 @@ allprojects {
         google()
         mavenCentral()
         jcenter()
-        maven {url 'http://nexus-app.bokecc.com/repository/sdk-group/'}
-        maven { url 'http://4thline.org/m2' }
+        maven { url 'http://nexus-app.bokecc.com/repository/sdk-group/'; allowInsecureProtocol = true }
+        maven { url 'http://4thline.org/m2'; allowInsecureProtocol = true }
     }
 }
 
