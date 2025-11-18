@@ -2,6 +2,10 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 34
+    namespace 'com.bokecc.vod'
+    buildFeatures {
+        buildConfig true
+    }
     defaultConfig {
         applicationId "com.bokecc.vod"
         minSdkVersion 21
